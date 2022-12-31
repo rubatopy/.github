@@ -1,0 +1,29 @@
+name: Feature Request
+description: Suggest an idea for this project
+labels: feature
+body:
+    - type: textarea
+      id: description
+      attributes:
+          label: Describe the feature
+          description: Clearly explain what you want to see added to the project.
+      validations:
+          required: true
+
+    - type: textarea
+      id: solutions
+      attributes:
+          label: Describe the solution you'd like
+          description: If you have an idea of how this feature should be implemented, please share it here.
+
+    - type: textarea
+      id: alternatives
+      attributes:
+          label: Describe alternatives you've considered
+          description: If you have considered other ways to solve your problem, please share them here.
+
+    - type: textarea
+      id: context
+      attributes:
+          label: Additional context
+          description: If you have any other context or screenshots about the feature request, please share them here.
