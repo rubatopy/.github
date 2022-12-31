@@ -4,9 +4,8 @@
 [![PyPI](https://img.shields.io/pypi/v/rubato?style=flat-square)](https://pypi.org/project/rubato/)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/rubato?style=flat-square)](https://pypi.org/project/rubato/)
 [![GitHub Release Date](https://img.shields.io/github/release-date/rubatopy/rubato?style=flat-square)](https://github.com/rubatopy/rubato/releases)
-[![GitHub Build Status](https://img.shields.io/github/workflow/status/rubatopy/rubato/Build?style=flat-square)](https://github.com/rubatopy/rubato/actions/workflows/build.yml)
-[![GitHub Docs Status](https://img.shields.io/github/workflow/status/rubatopy/rubato/Docs?label=docs&style=flat-square)](https://rubatopy.github.io/)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white&style=flat-square)](https://github.com/pre-commit/pre-commit)
+[![GitHub Build Status](https://img.shields.io/github/actions/workflow/status/rubatopy/rubato/tests.yml?branch=main&style=flat-square)](https://github.com/rubatopy/rubato/actions/workflows/tests.yml)
+[![GitHub Docs Status](https://img.shields.io/github/actions/workflow/status/rubatopy/rubato/nightly.yml?branch=main&label=docs&style=flat-square)](https://rubatopy.github.io/)
 
 [<img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-4-1.png" alt="Discord Server" width="25" />](https://discord.gg/rdce5GXRrC)
 &nbsp;
@@ -15,26 +14,61 @@
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" alt="Linkedin Page" width="25"/>](https://www.linkedin.com/company/rubatopy/)
 &nbsp;
 
-rubato is a modern 2D engine for game developement in python. Dynamic physics simulations, robust scene management, event listener system and more all come prepackaged. Built in Cython using SDL2, rubato offers great performance without compromising on the intuitive nature of python code.
+<!-- If you update this README update the GitHub profile of rubatopy README -->
 
-As of release 3.0.0, the transition to SDL2 and Cython was completed. DLLs and wheels for the household-name platforms come prebundled, making rubato plug-and-play on most machines. This transition has enabled more complex functionality such as antialiasing and hardware acceleration, as well as a backend of C classes that will be gradually rolled out in later 3.x releases to improve performance. Older versions of rubato, such as PyGame-based 1.2, are now completely deprecated and it is highly recommended for users of those versions to upgrade. If you would like to read more about PySDL2 or need to utilize its underlying functionality in your project, you can read the python wrapper documentation [here](https://pysdl2.readthedocs.io/en/0.9.11/) and the base C++ SDL wiki [here](https://wiki.libsdl.org).
+rubato is a modern 2D engine for game developement in python built in Cython using SDL2. It is aimed to aid in rapid prototyping and educational development of games as a stepping stone towards AAA tools such as Unity. rubato is more robust than its competitors, with a more intuitive syntax, high customizability, and zippy performance.
+
+Here are some features we're especially proud of:
+
+-   Powerful Rigidbody Physics
+-   Event Subscription/Listener System
+-   Spritesheets and Animations
+-   Particle Systems
+-   Tiled / Tilemap Support
+-   Multichannel Sound System
+-   Antialiasing + Anisotropic Filtering
+-   Collision Optimization with Quadtrees
+-   Texture-based Hardware Acceleration
+-   User Interface Elements
+-   And more!
+
+1.0 is the latest API-stable release as of Dec. 31 2022, and we plan to maintain backwards compatibility in future releases. Please note that the alpha versions (0.x.x) are now deprecated and it is strongly recommended to update in order to get the latest features and optimizations.
 
 _Wondering about the name? rubato is a music term that indicates a phrase that should be performed expressively and freely. We aim to harness that same freedom, bringing a fresh, modern take on game developement in python to a variety of users regardless of their coding background._
+<br>
 
-### Get started [here](https://rubato.app/).
+## Getting Started
 
-A big thank you to all of our [contributors](https://github.com/rubatopy/rubato/blob/main/CONTRIBUTORS.md) who help make this project possible.
+Using rubato is super easy. Just install rubato through pip in a terminal:
+
+```bash
+pip install rubato
+```
+
+After that, getting a window up takes only 3 lines of code!
+
+```python
+import rubato as rb
+
+# initialize rubato
+rb.init()
+
+# launch the window
+rb.begin()
+```
+
+Check out our [tutorial](https://docs.rubato.app/latest/tutorials/platformer/) to learn more about what you can do with rubato.
 
 #### Changelog
 
 See [CHANGELOG.md](https://github.com/rubatopy/rubato/blob/main/CHANGELOG.md)
 
-#### Looking to contribute to Rubato?
+#### Looking to contribute to rubato?
 
-See [CONTRIBUTING.md](https://github.com/rubatopy/rubato/blob/main/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/rubatopy/rubato/blob/main/CONTRIBUTING.md). And join our [discord](https://discord.gg/rdce5GXRrC)!
+
+A big thank you to all of our [contributors](https://github.com/rubatopy/rubato/blob/main/CONTRIBUTORS.md) who help make this project possible.
 
 #### Code of Conduct
 
-See [CODE_OF_CONDUCT.md](https://github.com/rubatopy/rubato/blob/main/CODE_OF_CONDUCT.md).
-
-_Credit to [@ArksDigital](https://twitter.com/ArksDigital) for the dino animation used in several of the demos / tutorials. ([itch page](https://arks.itch.io/dino-characters))_
+See [CODE_OF_CONDUCT.md](https://github.com/rubatopy/.github/blob/main/CODE_OF_CONDUCT.md).
