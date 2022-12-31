@@ -2,6 +2,7 @@ blank_issues_enabled: false
 contact_links:
     - name: Join our Discord server
       url: https://discord.gg/rdce5GXRrC
-      about: Join our Discord server to get help and support!
-    - name: Read our Documentation
+      about: Fastest way to get help and support!
+    - name: Check out our Documentation
       url: https://docs.rubato.app/latest/api/
+      about: You're issue may be explained somewhere!
