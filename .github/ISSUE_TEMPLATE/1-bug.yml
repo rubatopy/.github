@@ -46,10 +46,10 @@ body:
     - type: checkboxes
       id: terms
       attributes:
-      label: Code of Conduct
-      description:
-          By submitting this issue, you agree to follow our [Code of
-          Conduct](https://github.com/rubatopy/.github/blob/main/CODE_OF_CONDUCT.md)
-      options:
-          - label: I agree to follow this project's Code of Conduct
-            required: true
+          label: Code of Conduct
+          description:
+              By submitting this issue, you agree to follow our [Code of
+              Conduct](https://github.com/rubatopy/.github/blob/main/CODE_OF_CONDUCT.md)
+          options:
+              - label: I agree to follow this project's Code of Conduct
+                required: true
